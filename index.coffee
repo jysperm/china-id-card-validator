@@ -45,7 +45,7 @@ module.exports = (id_card) ->
       return memo + parseInt(value) * weighting_factor[index]
     , 0
 
-    unless checksum == check_number[sum % 11].toString()
+    unless checksum.toUpperCase() == check_number[sum % 11].toString()
       return false
 
     return true
