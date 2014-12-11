@@ -1,0 +1,28 @@
+{
+  "name": "china-id-card-validator",
+  "version": "0.1.0",
+  "description": "Validator for China's ID Card.",
+  "homepage": "https://github.com/jysperm/china-id-card-validator",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jysperm/china-id-card-validator.git"
+  },
+  "contributors": [
+    {
+      "name": "jysperm",
+      "email": "jysperm@gmail.com",
+      "url": "http://jysperm.me"
+    }
+  ],
+  "scripts": {
+    "test": "./node_modules/.bin/mocha --compilers coffee:coffee-script/register -- test.coffee"
+  },
+  "dependencies": {
+    "coffee-script": "^1.7.1",
+    "underscore": "^1.7.0"
+  },
+  "devDependencies": {
+    "mocha": "^2.0.0"
+  }
+}
