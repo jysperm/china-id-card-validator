@@ -33,13 +33,13 @@ module.exports = (id_card) ->
     min_year = new Date Date.now() - 122 * 365 * 24 * 3600 * 1000
 
     unless max_year >= parseInt(year) >= min_year
-      return fasle
+      return false
 
     unless 12 >= parseInt(month, 10) >= 1
-      return fasle
+      return false
 
     unless 31 >= parseInt(day, 10) >= 1
-      return fasle
+      return false
 
     sum = _.reduce id_card[... 17].split(''), (memo, value, index) ->
       return memo + parseInt(value) * weighting_factor[index]

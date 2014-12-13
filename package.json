@@ -1,6 +1,6 @@
 {
   "name": "china-id-card-validator",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Validator for China's ID Card.",
   "homepage": "https://github.com/jysperm/china-id-card-validator",
   "license": "MIT",
